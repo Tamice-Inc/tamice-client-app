@@ -1,0 +1,204 @@
+/* App.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  height: 100%;
+}
+
+.calendar-container {
+  width: 750px;
+  height: 790px;
+  padding: 3% 3% 3% 3%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 5px 7px 11px 0px rgba(0, 0, 0, 0.3) !important;
+
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    width: 500px !important;
+    height: 600px !important;
+  }
+
+  @media screen and (max-width: 500px) and (min-width: 0px) {
+    width: 375px !important;
+    height: 600px !important;
+  }
+}
+
+.react-calendar {
+  width: 100% !important;
+  height: 665px !important;
+  border: none !important;
+  margin-top: 2% !important;
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    height: 500px !important;
+  }
+
+  @media screen and (max-width: 500px) and (min-width: 0px) {
+    height: 520px !important;
+  }
+}
+
+.react-calendar__tile {
+  height: 95px !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  @media screen and (max-width: 768px) and (min-width: 500px) {
+    height: 75px !important;
+    padding: 0px !important;
+  }
+
+  @media screen and (max-width: 500px) and (min-width: 0px) {
+    height: 70px !important;
+    padding: 0px !important;
+  }
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: white !important;
+}
+
+.react-calendar__tile abbr {
+  align-self: flex-start !important; /* Align the abbreviation (text) to the top */
+}
+
+.react-calendar__navigation__label__labelText {
+  font-size: xx-large;
+  font-weight: 800;
+  font-family: "Poppins";
+  color: rgba(12, 12, 12, 0.9);
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 899px) {
+  .react-calendar__navigation__label__labelText {
+    font-size: x-large; /* Adjust the font size for smaller screens */
+    font-weight: 600; /* Adjust the font weight for smaller screens */
+    font-family: "Poppins";
+    text-transform: uppercase;
+  }
+}
+
+/* Media query for smaller screens (adjust the max-width value as needed) */
+@media screen and (max-width: 856px) {
+  .react-calendar__tile {
+    height: 10vh;
+  }
+
+  .time-badge {
+    font-size: 7px !important; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 1287px) {
+  .time-badge {
+    font-size: 13px !important; /* Adjust the font size for smaller screens */
+    font-family: "Poppins";
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .react-calendar__tile {
+    height: 7vh !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .react-calendar__navigation__label__labelText {
+    font-size: large; /* Adjust the font size for smaller screens */
+    font-weight: 600; /* Adjust the font weight for smaller screens */
+    font-family: "Poppins";
+    text-transform: uppercase;
+  }
+
+  .react-calendar__tile {
+    height: 9vh;
+  }
+
+  .time-badge {
+    font-family: "Poppins";
+    font-size: 9px !important; /* Adjust the font size for smaller screens */
+  }
+
+  .close-button {
+  }
+
+  .time-badge {
+    font-size: xx-small !important;
+    padding: 0px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .react-calendar__tile {
+    height: 15vh !important;
+    padding: 0px !important;
+  }
+}
+
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.react-calendar__month-view__days__day {
+  font-size: initial;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: white !important;
+}
+
+.react-calendar__tile--active {
+  background: #006edc;
+  color: black !important;
+}
+
+.react-calendar__tile--active {
+  background: white !important;
+  /* color: white; */
+}
+
+.react-calendar__navigation__prev2-button {
+  display: none !important;
+}
+
+.react-calendar__navigation__next2-button {
+  display: none !important;
+}
+
+.react-calendar__navigation__arrow {
+  border: 2px solid #d8d4d4 !important;
+  border-radius: 22px !important;
+}
+
+.react-calendar__navigation__prev-button {
+  margin-left: 4% !important;
+}
+
+.react-calendar__navigation__next-button {
+  margin-right: 4% !important;
+}
+
+.react-calendar__month-view__weekdays {
+  /* margin-bottom: 5%; */
+}
+
+.close-button {
+  margin-left: 98%;
+  cursor: pointer;
+  color: gray;
+  font-size: larger;
+}
+
+.current-date {
+  background-color: rgb(255, 255, 125) !important;
+}

@@ -1,0 +1,94 @@
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import jwtDecode from "jwt-decode";
+
+import { ProductCard } from "../../shared/components/ProductCard";
+import { useGetSimTickets } from "../../shared/hooks";
+import { cityIdState, pageNumState } from "../../App";
+
+
+export const SimCardView = () => {
+  // Define Global State variables
+  const [cityId] = cityIdState.useState();
+  const [totalNum, setTotalNum] = pageNumState.useState();
+
+  // Define Component State variables
+  const [page, setPage] = useState(totalNum);
+  const [isShowing, setIsShowing] = useState(true);
+  const [tickets, setTickets] = useState<any>([]);
+
+  // Fetch tickets from useGetSimTickets with API call
+  const { tickets: allTickets } = useGetSimTickets({
+    cityId
+  });
+
+  // Create a navigate instance from useNavigate Hook
+  const navigate = useNavigate();
+
+  // Function to check auth Token expiration
+  const checkTokenExpiration = () => {
+    const token = localStorage.getItem("authToken");
+
+    if (token) {
+      const decodedToken: any = jwtDecode(token);
+
+      const currentTime = Date.now() / 1000; // Convert current time to seconds
+
+      if (decodedToken.exp < currentTime) {
+        // Token has expired, force logout here
+        // For example, clear the token from local storage and redirect the user to the login page
+        localStorage.removeItem("authToken");
+        localStorage.removeItem("loginData");
+        localStorage.removeItem("order_number");
+        localStorage.removeItem("useremail");
+
+        navigate("/");
+      }
+    }
+  };
+
+  // Function to handle click event
+// const handleClick = () => {
+//   if (tickets) {
+//     setPage(tickets.length); // Set the page number to the total number of tickets
+//     setIsShowing(false); // Hide the "Load More" button
+//   }
+// };
+
+  // Define useEffect Hooks
+  useEffect(() => {
+    const intervalId = setInterval(checkTokenExpiration, 1000); // Check token expiration every second
+    return () => clearInterval(intervalId); // Clear the interval when the component unmounts
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [navigate]);
+
+  useEffect(() => {
+    setPage(totalNum || 5);
+  }, [cityId]);
+
+  useEffect(() => {
+    setTickets(allTickets)
+  }, [allTickets]);
+
+
+  return (
+    <div className="flex justify-center w-full gap-x-3">
+      <div className="flex flex-col gap-y-8 w-full max-w-[1300px]">
+           {tickets?.map((item:any) => (
+          <ProductCard key={item.name} {...item} />
+        ))}
+        {/* {isShowing && tickets.length > 0 ?
+          <div className="flex justify-center text-base text-blue hover:cursor-pointer hover:underline font-poppins" onClick={handleClick}>전체보기</div> :
+          <></>
+        } */}
+        {tickets.length == 0 ?
+          <div className="flex justify-center text-base text-blue font-poppins">There are no tickets to display.</div> :
+          <></>
+        }
+      </div>
+    </div>
+  )
+};

@@ -1,0 +1,37 @@
+.info-block {
+  width: 100%;
+  display: inline-block;
+}
+
+.info-block p {
+  white-space: nowrap; /* corrected white-space value */
+  margin: 0;
+  /* font-size: 12px;  */
+}
+
+.info-block_title {
+  font-size: 30px;
+
+  @media (max-width: 600px) {
+    /* width: 100%; */
+    font-size: 20px; /* reduce font size for smaller viewports */
+  }
+}
+
+@media (max-width: 600px) {
+  .info-block p {
+    font-size: 12px; /* reduce font size for smaller viewports */
+  }
+}
+
+@media (max-width: 390px) {
+  .info-block p {
+    font-size: 10px; /* reduce font size for smaller viewports */
+  }
+}
+
+@media (max-width: 450px) {
+  .break-before {
+    display: block;
+  }
+}

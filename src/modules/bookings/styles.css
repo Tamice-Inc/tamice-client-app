@@ -1,0 +1,112 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(249, 246, 246, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  /* background: rgba(249, 246, 246, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  /* height: 350px; */
+  width: 350px;
+  height: auto;
+  position:absolute;
+  outline: none;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(226, 220, 220);
+}
+
+.modal-content-spinner {
+  /* height: 350px; */
+  width: 20%;
+  position:absolute;
+  outline: none;
+  padding: 25px;
+}
+
+.modal-content-disable {
+  width: 350px;
+  position:absolute;
+  outline: none;
+  /* background: white; */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(226, 220, 220);
+}
+
+/* -----------------------------custom---------------- */
+
+.custom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(249, 246, 246, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-overlay-spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  /* background: rgba(249, 246, 246, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-content {
+  /* height: 350px; */
+  width: 350px;
+  height: auto;
+  position:absolute;
+  outline: none;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(226, 220, 220);
+}
+
+.custom-content-spinner {
+  /* height: 350px; */
+  width: 20%;
+  position:absolute;
+  outline: none;
+  padding: 25px;
+}
+
+.custom-content-disable {
+  width: 350px;
+  position:absolute;
+  outline: none;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(226, 220, 220);
+}
+
+
+

@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/assets/fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../public/assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volkhov";
+  src: url("../public/assets/fonts/Volkhov/Volkhov-Bold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volkhov";
+  src: url("../public/assets/fonts/Volkhov/Volkhov-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+/* --------------------------------------------------------------------------Noto San -------- */
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-Thin.ttf");
+  font-weight: 100;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-ExtraLight.ttf");
+  font-weight: 200;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-Light.ttf");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-Medium.ttf");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-SemiBold.ttf");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-ExtraBold.ttf");
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("../public/assets/fonts/Noto_Sans_KR/static/NotoSansKR-Black.ttf");
+  font-weight: 900;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif !important; */
+  /* font-family: "Pretendard", sans-serif !important; */
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+.Carousel__RailWrapper-sc-hyhecw-1 {
+  margin: 0 0px !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rdrDays {
+  width: 100%;
+}
+
+.rdrMonth {
+  min-width: 100%;
+}
+
+.rdrMonthAndYearWrapper {
+  padding: 0 30px;
+}
+
+.rdrDays {
+  min-height: 600px;
+  /* min-height: fit-content !important; */
+}
+
+.rdrWeekDays {
+  margin-bottom: 30px;
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  content: none !important;
+  padding: 0 !important;
+  width: auto;
+  height: fit-content;
+}
+
+.rdrDayNumber {
+  min-height: fit-content !important;
+  min-height: 100% !important;
+}
+
+.rdrDay {
+  min-height: 100px;
+}
+
+.tooltip-modal {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.tooltip-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+.input-style {
+  /* Customize the appearance of the input */
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 14px;
+  /* Add any additional styles you want */
+}
+
+.custom-calendar .rdrDay {
+  min-height: 50px;
+}
+.custom-calendar .rdrDays {
+  min-height: 30px;
+}
+
+.googleButton {
+  width: 300px;
+  height: 50px;
+  font-size: 14pt !important;
+}
+
+.vertical-lr {
+  writing-mode: vertical-lr;
+  @media (min-width: 900px) {
+    /* Apply different styles for screens with a minimum width of 768px */
+    writing-mode: lr-tb;
+  }
+}
+
+.green-dot {
+  background-color: rgb(43, 224, 43);
+  color: red;
+  height: 2px;
+  width: 80%;
+  margin-left: 10%;
+}
+.selected-date {
+  background-color: #007bff;
+  color: white; /* Optional: Set text color */
+}
+
+.korean-font {
+  font-family: "Noto Sans Korean" ;
+  font-weight: 300; 
+}
+
+#payment-form {
+  margin-bottom: 1rem !important;
+}
+.sq-card-message {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+  /* display: none !important; */
+}
+

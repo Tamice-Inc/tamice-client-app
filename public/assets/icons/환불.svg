@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="700" viewBox="0 0 700 700">
+  <defs>
+    <clipPath id="clip-환불">
+      <rect width="700" height="700"/>
+    </clipPath>
+  </defs>
+  <g id="환불" clip-path="url(#clip-환불)">
+    <rect width="700" height="700" fill="#fff"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="152" cy="152" r="152" transform="translate(202.787 234.729)" fill="none" stroke="#2777ff" stroke-miterlimit="10" stroke-width="15"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="105.577" cy="105.577" r="105.577" transform="translate(249.21 281.152)" fill="none" stroke="#2777ff" stroke-miterlimit="10" stroke-width="15"/>
+    <g id="Group_4" data-name="Group 4" transform="translate(-574 46.837)">
+      <path id="Path_16" data-name="Path 16" d="M923.056,409.087V392.063c-9.777-.17-19.89-3.2-25.79-7.417l4.046-11.294a44.927,44.927,0,0,0,24.272,7.248c11.97,0,20.062-6.91,20.062-16.52,0-9.27-6.574-15-19.048-20.058-17.194-6.742-27.814-14.5-27.814-29.161,0-13.991,9.945-24.61,25.454-27.139V270.7h10.449v16.351c10.113.338,17.026,3.034,21.915,5.9l-4.214,11.125a40.753,40.753,0,0,0-21.24-5.731c-12.981,0-17.869,7.754-17.869,14.5,0,8.765,6.238,13.149,20.9,19.216,17.362,7.079,26.126,15.844,26.126,30.848,0,13.316-9.271,25.79-26.633,28.655v17.53Z" fill="#2777ff"/>
+    </g>
+    <path id="Path_17" data-name="Path 17" d="M750.654,476.916c-12.113-15.961-46.5-65.545-46.593-137.024C703.948,248.984,759.4,191.181,769,181.5c9.849-9.936,68.1-66.8,159.787-66.334,75.876.386,127.587,39.791,145.713,55.334,45.57,39.074,63.444,85.582,70.01,106.224" transform="translate(-574 46.837)" fill="none" stroke="#2777ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
+    <path id="Path_18" data-name="Path 18" d="M692,463l62,18.5,7.5-56.5" transform="translate(-574 46.837)" fill="none" stroke="#2777ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+    <path id="Path_19" data-name="Path 19" d="M1153.534,316.416a195.913,195.913,0,0,1-41,160.5" transform="translate(-574 46.837)" fill="none" stroke="#2777ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="15" stroke-dasharray="33"/>
+  </g>
+</svg>
